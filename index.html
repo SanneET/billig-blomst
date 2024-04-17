@@ -8,6 +8,7 @@
     <meta name="author" content="Billigblomst">
     <title>Billig Blomst</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
     <!--HUSK indsæt SEO-->
 
@@ -16,26 +17,28 @@
 <body>
     <header>
 
-        <div>
-            <li class="headIcon">
-                <img src="#" alt="taske-icon">
-                <img src="#" alt="Lokations-icon">
-            </li>
-        </div>
+        <section class="icon">
+            <img src="#" alt="taske-icon">
+            <img src="#" alt="Lokations-icon">
+        </section>
 
-        <div class="logo">
-            <li ><img src="img/logo/logo-teskt.webp" alt="logo"></li>
-        </div>
+        <section class="logo">
+          <img src="img/logo/logo-teskt.webp" alt="logo">
+        </section>
 
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars"></i>
+            </label>
              
              <ul>
-                <li><a href="#">RÅDGIVNING</a></li>
-                <li><a href="#">HAVE</a></li>
-                <li><a href="#">BOLIG</a></li>
-                <li><a href="#">OM OS</a></li>
-                <li><a href="#">GAVEKORT</a></li>
-                <li><a href="#">JOB I BILLIGBLOMST</a></li>
+                <li><a class="active" href="#">RÅDGIVNING</a></li>
+                <li><a class="active" href="#">HAVE</a></li>
+                <li><a class="active" href="#">BOLIG</a></li>
+                <li><a class="active" href="#">OM OS</a></li>
+                <li><a class="active" href="#">GAVEKORT</a></li>
+                <li><a class="active" href="#">JOB I BILLIGBLOMST</a></li>
              </ul>
             
         </nav>
