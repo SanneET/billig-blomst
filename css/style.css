@@ -11,17 +11,65 @@ body{
 }
 
 nav{
-    background: blue;
+    background: #FFFFFF;
     height: 80px;
     width: 100%;
 }
 
-label.logo{
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+nav ul li {
     
 }
 
 /* Forside */
 
+/* Styling af billede */
+.forsideBilled{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling af tekst på forside */
+.forsideTekst{
+    background-color: #8EB68B;
+    padding: 10vw;
+    
+}
+/* Styling af h1 */
+.forsideTekst h1{
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    text-align: center;
+    color: #E1FF8C;
+    font-size: 4vw;
+}
+/* Styling af p */
+.forsideTekst p{
+   text-align: center;
+   font-size: 1.5vw;
+   margin-top: 30px;
+   color: #29573B;
+}
 
 /* Om Os */
 
