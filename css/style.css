@@ -10,12 +10,21 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Styling af navbar */
 nav{
     background: #FFFFFF;
-    height: 80px;
+    height: 20%;
     width: 100%;
+    padding-bottom: 1%;
 }
 
+section.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 2%;
+}
 
 .logoContainer{
     display: flex;
@@ -33,13 +42,19 @@ nav ul{
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
     
 }
 
-nav ul li {
-    
+nav ul li a{
+ color: #8eb68b;  
+ font-size: 0.9rem; 
+}
+
+ul.li.a.active,a:hover{
+    text-decoration: underline;
+    transition: .5s;
 }
 
 /* Forside */
@@ -91,6 +106,7 @@ nav ul li {
 
 }
 
+HEAD
 /* Desktop */
 @media screen and (min-width: 768px) {
     .forsideTekst h1{
@@ -100,4 +116,81 @@ nav ul li {
         font-size: 1rem;
     }
 }
+
+
+/* navbar */
+@media screen and (max-width: 1400px) and (min-width: 769px)  {
+
+}
+
+
+
 /* Style af footer */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    max-width: 1170px;
+    background-color:#29573B
+    margin: auto;
+
+}
+
+.row{
+display: flex;
+flex-wrap: wrap
+}
+
+ul{
+    list-style: none;
+}
+
+
+.footer{
+    background-color:#29573B;
+    padding:70px 0 ;
+}
+
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 20px ;
+    color: #FFFFFF ;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    position: relative;
+} 
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
