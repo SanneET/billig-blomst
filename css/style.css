@@ -11,12 +11,34 @@ body{
 }
 
 nav{
-    background: blue;
+    background: #FFFFFF;
     height: 80px;
     width: 100%;
 }
 
-label.logo{
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+nav ul li {
     
 }
 
@@ -67,3 +89,4 @@ label.logo{
 
 }
 
+/* Style af footer */
