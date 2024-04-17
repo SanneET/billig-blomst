@@ -4,51 +4,26 @@
     box-sizing: border-box;
 }
 
-body {
+
+
+/* Forside */
+
+
+/* Om Os */
+
+
+/* Plantevejledning */
+
+
+/* Jordbær */
+
+/* Mobile */
+@media screen and (max-width: 320px){
 
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 999;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: #8EB68B;
-    backdrop-filter: blur(10px);
-}
-
-.sidebar li {
-    width: 100%;
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 321px) {
 
 }
 
-
-
-
-
-@media(max-width: 800px) {
-
-    .hideOnMobile {
-        display: none;
-
-    }
-    .menuButton {
-        display: block;
-    }
-
-}
-
-@media(max-width: 400px) {
-
-    .sidebar {
-        width: 100%;
-    }
-
-}
