@@ -69,6 +69,8 @@ ul.li.a.active,a:hover{
 .forsideTekst{
     background-color: #8EB68B;
     padding: 10vw;
+    max-width: 100%;
+    width: 100%;
     
 }
 /* Styling af h1 */
@@ -81,7 +83,7 @@ ul.li.a.active,a:hover{
 /* Styling af p */
 .forsideTekst p{
    text-align: center;
-   font-size: 1.5vw;
+   font-size: 2vw;
    margin-top: 30px;
    color: #29573B;
 }
@@ -104,11 +106,23 @@ ul.li.a.active,a:hover{
 
 }
 
+HEAD
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .forsideTekst h1{
+        font-size: 3rem;
+    }
+    .forsideTekst p{
+        font-size: 1rem;
+    }
+}
+
 
 /* navbar */
 @media screen and (max-width: 1400px) and (min-width: 769px)  {
 
 }
+
 
 
 /* Style af footer */
