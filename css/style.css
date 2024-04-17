@@ -179,7 +179,7 @@ ul.li.a.active,a:hover{
     flex-direction: column;
     min-height: 100px;
     max-width: 1170px;
-    background-color:#29573B
+    background-color:#29573B;
     margin: auto;
 
 }
