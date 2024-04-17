@@ -8,7 +8,6 @@
     <meta name="author" content="Billigblomst">
     <title>Billig Blomst</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
     <!--HUSK indsæt SEO-->
 
@@ -16,31 +15,73 @@
 <body>
     <header>
 
-        <section class="icon">
-            <img src="#" alt="taske-icon">
-            <img src="#" alt="Lokations-icon">
-        </section>
-
         <section class="logo">
+
+          <a id="burger" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
+
           <img src="img/logo/logo-teskt.webp" alt="logo">
+            
+          <section class="icon">
+            <img class="navIcon" src="img/logo/indkob.png" alt="taske-icon">
+            <img class="navIcon"src="img/logo/lokation.png" alt="Lokations-icon">
+          </section>
+
         </section>
 
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars"></i>
-            </label>
-             
-             <ul>
-                <li><a class="active" href="#">RÅDGIVNING</a></li>
-                <li><a class="active" href="#">HAVE</a></li>
-                <li><a class="active" href="#">BOLIG</a></li>
-                <li><a class="active" href="#">OM OS</a></li>
-                <li><a class="active" href="#">GAVEKORT</a></li>
-                <li><a class="active" href="#">JOB I BILLIGBLOMST</a></li>
-             </ul>
+            <ul class="sidebar">
+                <li><a onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a class="active centertext" href="#">RÅDGIVNING</a></li>
+                <li><a class="active centertext" href="#">HAVE</a></li>
+                <li><a class="active centertext" href="#">BOLIG</a></li>
+                <li><a class="active centertext" href="#">OM OS</a></li>
+                <li><a class="active centertext" href="#">GAVEKORT</a></li>
+                <li><a class="active centertext" href="#">JOB I BILLIGBLOMST</a></li>
+            </ul>
+            
+            <ul>
+                
+                <li><a class="active hideOnMobile" href="#">RÅDGIVNING</a></li>
+                <li><a class="active hideOnMobile" href="#">HAVE</a></li>
+                <li><a class="active hideOnMobile" href="#">BOLIG</a></li>
+                <li><a class="active hideOnMobile" href="#">OM OS</a></li>
+                <li><a class="active hideOnMobile" href="#">GAVEKORT</a></li>
+                <li><a class="active hideOnMobile" href="#">JOB I BILLIGBLOMST</a></li>
+                
+            </ul>
             
         </nav>
+        <script>
+            /*this is a javascript comment */
+            /*Creating  the hideSidebar functionality*/
+            //Creating a javascript funtion named hideSidebar
+        
+            function hideSidebar() {
+                // Creating a variable named, that fetch the sidebar attribute from the HTML document
+        
+                const sidebar = document.querySelector(".sidebar");
+                //Styling the sidebar from javascript and setting the display property to 'none'
+                sidebar.style.display = 'none';
+            }
+        
+            /*Creating  the showSidebar functionality*/
+            //Creating a javascript funtion named showSidebar
+        
+            function showSidebar() {
+        
+                // Creating a variable named, that fetch the sidebar attribute from the HTML document
+                const sidebar = document.querySelector('.sidebar');
+        
+                //Styling the sidebar from javascript and setting the display property to 'flex'
+                sidebar.style.display = 'flex';
+        
+        
+        
+            }
+        
+        
+        </script>
     </header>
 
     <!-- Opsætning af indhold på forside -->

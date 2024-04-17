@@ -18,12 +18,13 @@ nav{
     padding-bottom: 1%;
 }
 
-section.logo{
+section.logo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     padding-bottom: 2%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logoContainer{
@@ -35,6 +36,21 @@ section.logo{
     display: flex;
     justify-content: center;
     
+}
+
+section.icon img {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+section.icon{
+    display: flex;
+}
+
+img.navIcon{
+    height: 60%;
+    width: 2%;
 }
 
 nav ul{
@@ -55,6 +71,40 @@ nav ul li a{
 ul.li.a.active,a:hover{
     text-decoration: underline;
     transition: .5s;
+}
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #8eb68b;
+    margin-left: 0;
+}
+
+.sidebar li a{
+    color: #E1FF8C;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+li.centertext{
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Forside */
@@ -102,24 +152,33 @@ ul.li.a.active,a:hover{
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) and (min-width: 321px) {
+@media screen and (max-width: 1000px) and (min-width: 321px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+        
+    }
 
 }
 
 HEAD
 /* Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1001px) {
     .forsideTekst h1{
         font-size: 3rem;
     }
     .forsideTekst p{
         font-size: 1rem;
     }
+    #burger{
+        display: none;
+    }
 }
 
 
 /* navbar */
-@media screen and (max-width: 1400px) and (min-width: 769px)  {
 
 }
 
