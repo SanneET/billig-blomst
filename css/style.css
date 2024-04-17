@@ -152,6 +152,7 @@ li.centertext{
 }
 
 /* Tablet */
+
 @media screen and (max-width: 1000px) and (min-width: 321px) {
     .hideOnMobile{
         display: none;
@@ -159,18 +160,26 @@ li.centertext{
     .sidebar{
         width: 100%;
         
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .anbefaletContainer{
+        overflow-x: scroll; 
+        white-space: nowrap; 
+    }
+    .anbefaletBox{
+        margin-right: 10px;
+
     }
 
 }
 
-HEAD
 /* Desktop */
 @media screen and (min-width: 1001px) {
     .forsideTekst h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .forsideTekst p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     #burger{
         display: none;
@@ -182,7 +191,48 @@ HEAD
 
 }
 
+/* Styling af Anbefalet container med bokse */
+.forsideAnbefalet{
+    margin: 2vw 3vw;
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    color: #29573B;
+    font-size: 1vw;
+}
 
+.anbefaletContainer {
+    overflow: auto;
+    display: flex;
+    margin: 2vw;
+}
+
+.anbefaletBox{
+    background-color: #29573B;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.anbefaletBillede{
+    flex: 1;
+}
+
+.anbefaletKnap{
+    display: inline-block;
+    background-color: #29573B;
+    color:#E1FF8C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.anbefaletKnap:hover{
+    background-color:#8EB68B;
+}
 
 /* Style af footer */
 
@@ -252,4 +302,3 @@ padding: 0 15px;
         margin-bottom: 30px;
     }
 }
-
