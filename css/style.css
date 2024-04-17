@@ -59,6 +59,32 @@ ul.li.a.active,a:hover{
 
 /* Forside */
 
+/* Styling af billede */
+.forsideBilled{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling af tekst på forside */
+.forsideTekst{
+    background-color: #8EB68B;
+    padding: 10vw;
+    
+}
+/* Styling af h1 */
+.forsideTekst h1{
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    text-align: center;
+    color: #E1FF8C;
+    font-size: 4vw;
+}
+/* Styling af p */
+.forsideTekst p{
+   text-align: center;
+   font-size: 1.5vw;
+   margin-top: 30px;
+   color: #29573B;
+}
 
 /* Om Os */
 
@@ -78,9 +104,79 @@ ul.li.a.active,a:hover{
 
 }
 
+
 /* navbar */
 @media screen and (max-width: 1400px) and (min-width: 769px)  {
 
 }
 
+
 /* Style af footer */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    max-width: 1170px;
+    background-color:#29573B
+    margin: auto;
+
+}
+
+.row{
+display: flex;
+flex-wrap: wrap
+}
+
+ul{
+    list-style: none;
+}
+
+
+.footer{
+    background-color:#29573B;
+    padding:70px 0 ;
+}
+
+.footer-col{
+width: 25%;
+padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 20px ;
+    color: #FFFFFF ;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family:Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    position: relative;
+} 
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
