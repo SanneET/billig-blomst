@@ -23,3 +23,13 @@ body {
 
 
 /* Jordbær */
+
+/* Mobile */
+@media screen and (max-width: 320px){
+
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) and (min-width: 321px) {
+
+}
