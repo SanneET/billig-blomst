@@ -243,7 +243,6 @@ li.centertext{
     max-width: 1170px;
     background-color:#29573B;
     margin: auto;
-
 }
 
 .row{
@@ -274,6 +273,7 @@ padding: 0 15px;
     font-family:Helvetica, Arial, sans-serif;
     font-weight: 500;
     position: relative;
+    text-decoration:
 } 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
