@@ -53,7 +53,7 @@ img.navIcon{
     width: 2%;
 }
 
-nav ul{
+.vandretnav{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -74,11 +74,17 @@ ul.li.a.active,a:hover{
 }
 
 
+
+
+
+/* Styling sidebar */
+
+
 .sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 265vh;
     width: 250px;
     z-index: 999;
     display: none;
@@ -87,6 +93,7 @@ ul.li.a.active,a:hover{
     justify-content: space-around;
     background-color: #8eb68b;
     margin-left: 0;
+    padding-bottom: 40%;
 }
 
 .sidebar li a{
@@ -106,6 +113,48 @@ li.centertext{
     justify-content: center;
 
 }
+
+a#burgericon {
+    display: none;
+}
+
+
+li.sub{
+    margin-top: 10%;
+    color: #ffffff;
+}
+
+.sidebar li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+}
+
+
+nav .sidebar li ul .rådgivningSub{
+    display: flex;
+    flex-direction: column;
+}
+
+ul.rådgivningSub {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.sidebar li a{
+    display: flex;
+    justify-content: center;
+}
+
+a.active.centertext.spacetext {
+    display: flex;
+    margin-top: 5%;
+    font-size: large;
+}
+
 
 /* Forside */
 
@@ -142,6 +191,53 @@ li.centertext{
 
 
 /* Plantevejledning */
+
+.plantevejledningIntro{
+    background-color: #29573B;
+    padding:5vw;
+}
+
+.plantevejledningIntro h1{
+    text-align: center;
+    color: #E1FF8C;
+    font-size: 50px;
+}
+
+.sogefeltContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1vw;
+}
+.sogefelt{
+    text-align: center;
+    width: 100%; 
+    padding: 1vw; 
+    border: 2px solid #E1FF8C; 
+    border-radius: 50px; 
+    font-size: 1vw; 
+    background-color: #FFFFFF;
+}
+
+.plantevejledningIntro h2{
+    color: white;
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.plantevejledningIntro p{
+    font-size: 1vw; ;
+    text-align:center;
+    padding: 1vw;
+    color: #FFFFFF;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 
 
 /* Jordbær */
@@ -199,12 +295,11 @@ p {
 
 
 
-
-
-
-
 /* Mobile */
 @media screen and (max-width: 320px){
+    .plantevejledningIntro h1{
+        font-size: 5px;
+    }
 
 }
 
@@ -217,7 +312,10 @@ p {
     .sidebar{
         width: 100%;
     }
-        
+    .plantevejledningIntro h1{
+        font-size: 10px;
+    }
+}      
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
     .anbefaletContainer{
@@ -227,6 +325,9 @@ p {
     .anbefaletBox{
         margin-right: 10px;
 
+    }
+    #burgericon{
+        display: flex;
     }
 }
 
@@ -238,7 +339,11 @@ p {
     .forsideTekst p{
         font-size: 2rem;
     }
-    #burger{
+    
+    a#burgericon {
+        display: none;
+    }
+    ul.sidebar {
         display: none;
     }
 }
@@ -246,7 +351,7 @@ p {
 
 /* navbar */
 
-}
+
 
 /* Styling af Anbefalet container med bokse */
 .forsideAnbefalet{
@@ -275,8 +380,14 @@ p {
 
 .anbefaletBillede{
     flex: 1;
+    overflow: hidden;
+    width: 100%;
 }
 
+.anbefaletTekst{
+    color: white;
+    padding: 20px;
+}
 .anbefaletKnap{
     display: inline-block;
     background-color: #29573B;
@@ -285,6 +396,7 @@ p {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border: 2px solid #E1FF8C;
 }
 
 .anbefaletKnap:hover{
@@ -331,6 +443,7 @@ padding: 0 15px;
     font-weight: 500;
     position: relative;
     text-decoration: none;
+
 } 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
