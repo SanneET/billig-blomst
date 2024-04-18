@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Om Os */
+
+.titlehead{
+    background-color: #29573B;
+    padding-top: 1vw;
+
+}
+
+h2.titleheadbillig{
+    padding: 1%;
+}
+.titletext {
+    color: #E1FF8C;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+h2#titleheadbillig{
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+ul.midptitlesection {
+    display: flex;
+    flex-direction: row;
+}
+.midp{
+    color: #29573B;
+    font-size: 0.5rem;
+    
+}
+p.midptitle{
+    font-size: 0.6rem;
+    color: #29573B;
+
+}
+.midul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+img.midulimg{
+    width: 70%;
+    height: 70%;
+    display: none;
+    justify-content: flex-end;
+}
+img.midulimgmobile{
+    display: none;
+    
+}
+
+
+p.bottomp{
+    color: #29573B;
+    word-wrap: break-word;
+}
+.bottomsection{
+    background-color: #8EB68B;
+    padding-top: 3%;
+}
+#ledelse {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: #29573B;
+    font-style: bold;
+}
+img.ledelseimg{
+    width: 100%;
+
+}
+.bottomsection ul p{
+    margin-bottom: 5%;
+}
+
+
+
+/* Mobile */
+@media screen and (max-width: 320px){
+    .plantevejledningIntro h1{
+        font-size: 5px;
+    }
+    .img.midulimg{
+        display: none;
+        
+    }
+    img.midulimgmobile{
+        display: flex;
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .img.midulimg{
+        display: none;
+        
+    }
+    
+    p.bottomp{
+    color: #29573B;
+    font-size: 0.6rem;
+    max-width: 100%;
+    }
+    .midp{
+        font-size: 0.6rem;
+    }
+    .h1.titletext {
+        font-size: 0.3rem;
+    }
+}   
+/* Tablet */
+
+@media screen and (max-width: 1000px) and (min-width: 321px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .plantevejledningIntro h1{
+        font-size: 10px;
+    }
+    p.midp {
+        font-size: 1.2rem;
+    }
+
+    img.midulimg{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .ledelseimg {
+        max-width: 100%;
+    }
+    p.bottomp{
+        font-size: 1 rem;
+    }
+    p.midp{
+        font-size: o.6rem;
+    }
+    .h1.titletext {
+        font-size: 1rem;
+    }
+    h2#titleheadbillig {
+        font-size: 0.6rem;
+    }
+
+    
+
+}      
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+    .anbefaletContainer{
+        overflow-x: scroll; 
+        white-space: nowrap; 
+    }
+    .anbefaletBox{
+        margin-right: 10px;
+
+    }
+    #burgericon{
+        display: flex;
+    }
+    img.midulimgmobile{
+        display: none;
+    }
+    .img.midulimg{
+        display: flex;
+        display: flex;
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1001px) {
+    .forsideTekst h1{
+        font-size: 2rem;
+    }
+    .forsideTekst p{
+        font-size: 2rem;
+    }
+    
+    a#burgericon {
+        display: none;
+    }
+    ul.sidebar {
+        display: none;
+    }
+}
+
