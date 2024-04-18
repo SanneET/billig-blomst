@@ -143,11 +143,61 @@ li.centertext{
 
 /* Plantevejledning */
 
+.plantevejledningIntro{
+    background-color: #29573B;
+    padding:5vw;
+}
+
+.plantevejledningIntro h1{
+    text-align: center;
+    color: #E1FF8C;
+    font-size: 50px;
+}
+
+.sogefeltContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1vw;
+}
+.sogefelt{
+    text-align: center;
+    width: 100%; 
+    padding: 1vw; 
+    border: 2px solid #E1FF8C; 
+    border-radius: 50px; 
+    font-size: 1vw; 
+    background-color: #FFFFFF;
+}
+
+.plantevejledningIntro h2{
+    color: white;
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.plantevejledningIntro p{
+    font-size: 1vw; ;
+    text-align:center;
+    padding: 1vw;
+    color: #FFFFFF;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
 
 /* Jordbær */
 
 /* Mobile */
 @media screen and (max-width: 320px){
+    .plantevejledningIntro h1{
+        font-size: 5px;
+    }
 
 }
 
@@ -160,7 +210,10 @@ li.centertext{
     .sidebar{
         width: 100%;
     }
-        
+    .plantevejledningIntro h1{
+        font-size: 10px;
+    }
+}      
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
     .anbefaletContainer{
@@ -189,7 +242,7 @@ li.centertext{
 
 /* navbar */
 
-}
+
 
 /* Styling af Anbefalet container med bokse */
 .forsideAnbefalet{
@@ -218,8 +271,14 @@ li.centertext{
 
 .anbefaletBillede{
     flex: 1;
+    overflow: hidden;
+    width: 100%;
 }
 
+.anbefaletTekst{
+    color: white;
+    padding: 20px;
+}
 .anbefaletKnap{
     display: inline-block;
     background-color: #29573B;
@@ -228,6 +287,7 @@ li.centertext{
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border: 2px solid #E1FF8C;
 }
 
 .anbefaletKnap:hover{
@@ -273,7 +333,6 @@ padding: 0 15px;
     font-family:Helvetica, Arial, sans-serif;
     font-weight: 500;
     position: relative;
-    text-decoration:
 } 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
