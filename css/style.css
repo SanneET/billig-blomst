@@ -255,12 +255,67 @@ a.active.centertext.spacetext {
     text-align:center;
     padding: 1vw;
     color: #FFFFFF;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
+.overskriftPlantevejledning{
+    font-size: 2vw;
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    background-color: #8EB68B;
+    padding: 2vw 6vw;
+    color:#29573B;
+}
+.containerVejledning {
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #8eb68b;
+}
 
+.galleri {
+    border: 1px solid #ccc;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    
+}
 
+.galleri:hover {
+    border: 1px solid #777;
+}
+
+.galleri img {
+    width: 100%;
+    height: auto;
+}
+
+.galleriTekst {
+    padding: 15px;
+    text-align: center;
+}
+
+.plantevejledningTekstSlut{
+    padding: 2vw 5vw;
+
+}
+.plantevejledningTekstSlutOverskrift{
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    color: #29573B;
+    font-size: 2vw;
+}
+
+.plantevejledningTekstSlutTekst {
+    color: #29573B;
+    font-size: 1vw;
+}
+
+.plantevejledningTekstSlutListe{
+    color: #29573B;
+    font-size: 1vw;
+}
 
 /* Jordbær */
 
@@ -362,9 +417,7 @@ h2.midtTekst{
 
 /* Mobile */
 @media screen and (max-width: 320px){
-    .plantevejledningIntro h1{
-        font-size: 5px;
-    }
+
 
 }
 
@@ -377,9 +430,7 @@ h2.midtTekst{
     .sidebar{
         width: 100%;
     }
-    .plantevejledningIntro h1{
-        font-size: 10px;
-    }
+
 }      
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
