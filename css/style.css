@@ -5,7 +5,9 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+html{
+    font-size: 20px;
+}
 body{
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -166,7 +168,7 @@ a.active.centertext.spacetext {
 /* Styling af tekst på forside */
 .forsideTekst{
     background-color: #8EB68B;
-    padding: 10vw;
+    padding: 3rem;
     max-width: 100%;
     width: 100%;
     
@@ -176,18 +178,17 @@ a.active.centertext.spacetext {
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
     text-align: center;
     color: #E1FF8C;
-    font-size: 4vw;
+    font-size: 2rem;
 }
 /* Styling af p */
 .forsideTekst p{
    text-align: center;
-   font-size: 2vw;
+   font-size: 1rem;
    margin-top: 30px;
    color: #29573B;
 }
 
 /* Om Os */
-
 .titlehead{
     background-color: #29573B;
     width: 100vw;
@@ -282,7 +283,7 @@ img.ledelseimg{
 .plantevejledningIntro h1{
     text-align: center;
     color: #E1FF8C;
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 .sogefeltContainer{
@@ -290,15 +291,18 @@ img.ledelseimg{
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 1vw;
+    padding: 1px;
 }
 .sogefelt{
     text-align: center;
     width: 100%; 
-    padding: 1vw; 
+    padding: 1rem; 
     border: 2px solid #E1FF8C; 
     border-radius: 50px; 
+
     font-size: 16px; 
+
+    font-size: 1rem; 
     background-color: #FFFFFF;
 }
 
@@ -306,23 +310,79 @@ img.ledelseimg{
     color: white;
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
     text-align: center;
-    font-size: 2vw;
-    margin-bottom: 1vw;
+    font-size: 1.5rem;
 }
 
 .plantevejledningIntro p{
-    font-size: 1vw; ;
+    font-size: 1rem; ;
     text-align:center;
-    padding: 1vw;
+    padding: 5px;
     color: #FFFFFF;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
+.overskriftPlantevejledning{
+    font-size: 1.5rem;
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    background-color: #8EB68B;
+    padding: 5vw;
+    color:#29573B;
+}
+.containerVejledning {
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #8eb68b;
+}
 
+.galleri {
+    border: 1px solid #ccc;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    
+}
 
+.galleri:hover {
+    border: 1px solid #777;
+}
+
+.galleri img {
+    width: 100%;
+    height: auto;
+}
+
+.galleriTekst {
+    padding: 15px;
+    text-align: center;
+}
+
+.plantevejledningTekstSlut{
+    padding: 2vw 5vw;
+
+}
+.plantevejledningTekstSlutOverskrift{
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    color: #29573B;
+    font-size: 2rem;
+}
+
+.plantevejledningTekstSlutTekst {
+    color: #29573B;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.plantevejledningTekstSlutListe{
+    color: #29573B;
+    font-size: 1rem;
+}
 
 /* Jordbær */
+
 .container {
     width: 500vw; /* Sætter bredden af containeren til visningsvinduets bredde */
     height: 50%;
@@ -330,12 +390,12 @@ img.ledelseimg{
     justify-content: center;
     align-items: center;
     overflow: hidden; /* For at forhindre at billedet går ud over containeren */
-    
 }
 
 #jordbaer {
     width: 100%;
     height: auto; /* Bevarer billedets proportioner */
+    max-width: 100vw;
 }
 
 .jordbaer-intro {
@@ -360,6 +420,103 @@ img.ledelseimg{
         display: flex;
         justify-content: center;
     }
+
+h1.jordh1 {
+padding: 50px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 4vw;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #E1FF8C;
+}
+
+h2.jordh2 {
+    padding: 25px;
+    font-family:playfair display;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+}
+
+p.jordp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
+    color: #FFFFFF;
+    padding: 0.5px;
+}
+
+.topText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+jordbaer-midten{
+background-color:#8EB68B ;
+display: flex;
+flex-direction: column;
+padding: 5%;
+padding-bottom: 7%;
+}
+
+/* jeg ved ikke hvorfor, men den behøvede to for ellers fuckede den op? */
+section.jordbaer-midten {
+    background-color: #8EB68B;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-bottom: 7%;
+}
+
+.midtTekst {
+color: #29573B;
+justify-content: flex-start;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+p.midtTekst{
+    font-size: large;
+    padding-bottom: 2%;
+}
+
+h2.midtTekst{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#hvidbillede {
+    width: 70%;
+    height: auto;
+   
+}
+
+.hvidbillede {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.jordbærH2{
+    font-family: playfairdisplay, serif;
+    font-size: 30px;
+    padding-bottom: 7px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 320px){
+
 
 }
 
@@ -424,16 +581,16 @@ img.ledelseimg{
 
 /* Styling af Anbefalet container med bokse */
 .forsideAnbefalet{
-    margin: 2vw 3vw;
+    margin: 2px 3px;
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
     color: #29573B;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .anbefaletContainer {
     overflow: auto;
     display: flex;
-    margin: 2vw;
+    margin:20px;
 }
 
 .anbefaletBox{
@@ -443,7 +600,7 @@ img.ledelseimg{
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 2rem;
     width: 100%;
 }
 
@@ -453,6 +610,12 @@ img.ledelseimg{
     width: 100%;
 }
 
+.forsideAnbefalet h2{
+    color: #29573B;
+    font-size: 1.5rem;
+    text-align:left ;
+
+}
 .anbefaletTekst{
     color: white;
     padding: 20px;
@@ -478,7 +641,8 @@ img.ledelseimg{
     display: flex;
     flex-direction: column;
     min-height: 100px;
-    max-width: 1170px;
+    /* max-width: 1170px; */
+    max-width: 100%;
     background-color:#29573B;
     margin: auto;
 }
@@ -493,15 +657,33 @@ flex-wrap: wrap
 }
 
 
-.footer{
+/* .footer{
     background-color:#29573B;
-    padding:70px 0 ;
+    /* padding:70px 0 ; */
+/*} */
+
+footer.footer {
+    padding: 7%;
+    background-color:#29573B;
 }
 
-.footer-col{
+/* .footer-col{
 width: 25%;
 padding: 0 15px;
+} */
+
+/* .footer-col{
+    display: flex;
+} */
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-top: 5%;
 }
+
 
 .footer-col h4{
     font-size: 20px ;
@@ -515,7 +697,7 @@ padding: 0 15px;
 
 } 
 .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .footer-col ul li a {
