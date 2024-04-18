@@ -160,8 +160,7 @@ a.active.centertext.spacetext {
 
 /* Styling af billede */
 .forsideBilled{
-    max-width: 100%;
-    height: auto;
+    max-width: 100vw;
 }
 
 /* Styling af tekst på forside */
@@ -264,6 +263,59 @@ a.active.centertext.spacetext {
 
 
 /* Jordbær */
+.container {
+    width: 500vw; /* Sætter bredden af containeren til visningsvinduets bredde */
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* For at forhindre at billedet går ud over containeren */
+    
+}
+
+#jordbaer {
+    width: 100%;
+    height: auto; /* Bevarer billedets proportioner */
+}
+
+.jordbaer-intro {
+ background-color: #29573B; 
+ padding: 100px;  
+}
+
+
+h1 {
+padding: 50px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 4vw;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #E1FF8C;
+}
+
+h2 {
+    padding: 25px;
+    font-family:playfair display;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+
 
 /* Mobile */
 @media screen and (max-width: 320px){
@@ -412,6 +464,8 @@ padding: 0 15px;
     font-family:Helvetica, Arial, sans-serif;
     font-weight: 500;
     position: relative;
+    text-decoration: none;
+
 } 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
