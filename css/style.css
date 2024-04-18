@@ -189,6 +189,29 @@ a.active.centertext.spacetext {
 
 /* Om Os */
 
+.titlehead{
+    background-color: #29573B;
+    width: 100vw;
+    height: 20vw;
+    padding-top: 3vw;
+
+}
+.titletext {
+    color: #E1FF8C;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+#titleheadbillig{
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
 
 /* Plantevejledning */
 
