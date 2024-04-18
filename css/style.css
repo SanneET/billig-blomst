@@ -369,14 +369,32 @@ p.jordp {
     font-family: Helvetica, sans-serif;
     font-family: Helvetica, arial, sans-serif;
     color: #FFFFFF;
-
+    padding: 0.5px;
 }
 
-.jordbaer-midten{
+.topText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+jordbaer-midten{
 background-color:#8EB68B ;
 display: flex;
 flex-direction: column;
 padding: 5%;
+padding-bottom: 7%;
+}
+
+/* jeg ved ikke hvorfor, men den behøvede to for ellers fuckede den op? */
+section.jordbaer-midten {
+    background-color: #8EB68B;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-bottom: 7%;
 }
 
 .midtTekst {
@@ -387,7 +405,7 @@ padding-right: 2%;
 }
 
 p.midtTekst{
-    font-size: xx-large;
+    font-size: large;
     padding-bottom: 2%;
 }
 
@@ -411,8 +429,8 @@ h2.midtTekst{
 
 .jordbærH2{
     font-family: playfairdisplay, serif;
-    font-size: 40px;
-    padding-bottom: 10px;
+    font-size: 30px;
+    padding-bottom: 7px;
 }
 
 
