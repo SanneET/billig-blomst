@@ -10,7 +10,101 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
 
+        <section class="logo">
+
+          <a id="burger" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
+
+          <img src="img/logo/logo-teskt.webp" alt="logo">
+            
+          <section class="icon">
+            <img class="navIcon" src="img/logo/indkob.png" alt="taske-icon">
+            <img class="navIcon"src="img/logo/lokation.png" alt="Lokations-icon">
+          </section>
+
+        </section>
+
+        <nav>
+            
+            <!-- lodret navbar -->
+
+            <ul class="sidebar">
+                <li ><a onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path id="burgericon" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a class="active centertext spacetext" href="#">RÅDGIVNING</a>
+                    <ul class="rådgivningSub">
+                        <li class="sub">ÅRSTIDER</li>
+                        <li class="sub">PLANTEVEJLEDNING</li>
+                    </ul>
+                </li>
+
+                <li><a class="active centertext spacetext" href="#">HAVE</a>
+                    <ul class="haveSub">
+                        <li class="sub">HAVEPLANTER</li>
+                        <li class="sub">SOMMER
+                             OG DRIVHUSPLANTER</li>
+                        <li class="sub">ROSER</li>
+                        <li class="sub">HÆKPLANTER</li>
+                        <li class="sub">KRUKKER</li>
+                    </ul>
+                </li>
+                
+                <li><a class="active centertext spacetext" href="#">BOLIG</a>
+                    <ul class="boligSub">
+                        <li class="sub">STUEPLANTER</li>
+                        <li class="sub">BLOMSTER OG BUKETTER</li>
+                        <li class="sub">DEKORATIONER</li>
+                        <li class="sub">BINDEARTIKLER</li>
+                        <li class="sub">GLAS</li>
+                    </ul>
+                </li>
+
+                <li><a class="active centertext spacetext" href="#">OM OS</a></li>
+                <li><a class="active centertext spacetext" href="#">GAVEKORT</a></li>
+                <li><a class="active centertext spacetext" href="#">JOB I BILLIGBLOMST</a></li>
+            </ul>
+            
+            <!-- vandret navbar -->
+            <ul class="vandretnav">
+                <li><a class="active hideOnMobile" href="#">RÅDGIVNING</a></li>
+                <li><a class="active hideOnMobile" href="#">HAVE</a></li>
+                <li><a class="active hideOnMobile" href="#">BOLIG</a></li>
+                <li><a class="active hideOnMobile" href="#">OM OS</a></li>
+                <li><a class="active hideOnMobile" href="#">GAVEKORT</a></li>
+                <li><a class="active hideOnMobile" href="#">JOB I BILLIGBLOMST</a></li>
+            </ul>
+            
+        </nav>
+        <script>
+            /*this is a javascript comment */
+            /*Creating  the hideSidebar functionality*/
+            //Creating a javascript funtion named hideSidebar
+        
+            function hideSidebar() {
+                // Creating a variable named, that fetch the sidebar attribute from the HTML document
+        
+                const sidebar = document.querySelector(".sidebar");
+                //Styling the sidebar from javascript and setting the display property to 'none'
+                sidebar.style.display = 'none';
+            }
+        
+            /*Creating  the showSidebar functionality*/
+            //Creating a javascript funtion named showSidebar
+        
+            function showSidebar() {
+        
+                // Creating a variable named, that fetch the sidebar attribute from the HTML document
+                const sidebar = document.querySelector('.sidebar');
+        
+                //Styling the sidebar from javascript and setting the display property to 'flex'
+                sidebar.style.display = 'flex';
+        
+        
+        
+            }
+        </script>
+    </header>
 <main>
     <section class="plantevejledningIntro">
         <h1>PLANTEVEJLEDNING</h1>
@@ -103,7 +197,7 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer-col">
+            <div class="footer-col col-1">
                 <h4>BILLIG BLOMST</h4>
                 <ul>
                     <li><a href="#">Om os</a></li>
@@ -115,7 +209,7 @@
                 </ul>
 
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-2">
                 <h4>HAVE</h4>
                 <ul>
                     <li><a href="#">Haveplanter</a></li>
@@ -124,7 +218,7 @@
                 </ul>
 
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-3">
                 <h4>BOLIG</h4>
                 <ul>
                     <li><a href="#">Stueplanter</a></li>
@@ -136,7 +230,7 @@
                 </ul>
 
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-4">
                 <h4>KUNDESERVICE</h4>
                 <ul>
                     <li><a href="#">Kontakt kundeservice</a></li>
