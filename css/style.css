@@ -159,6 +159,7 @@ li.centertext{
     }
     .sidebar{
         width: 100%;
+    }
         
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
@@ -170,7 +171,6 @@ li.centertext{
         margin-right: 10px;
 
     }
-
 }
 
 /* Desktop */
@@ -250,7 +250,7 @@ display: flex;
 flex-wrap: wrap
 }
 
-ul{
+.footer-col ul{
     list-style: none;
 }
 
