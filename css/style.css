@@ -252,7 +252,7 @@ a.active.centertext.spacetext {
 }
 
 #jordbaer {
-    width: 50vw; /* Strækker billedet til containerens bredde */
+    width: 100%;
     height: auto; /* Bevarer billedets proportioner */
 }
 
