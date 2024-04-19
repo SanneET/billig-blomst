@@ -39,6 +39,10 @@ section.logo {
     justify-content: center;
     
 }
+a.logoimg {
+    display: flex;
+    justify-content: space-around;
+}
 
 section.icon img {
     display: flex;
@@ -102,6 +106,9 @@ ul.li.a.active,a:hover{
 
 .sidebar a{
     width: 100%;
+}
+.sidebar .color a{
+    color: white;
 }
 
 li.centertext{
