@@ -653,10 +653,11 @@ padding: 0 15px;
 }
 
 #blomsterlogo {
+    margin-left: -50%;
     display: flex;
     flex-wrap: nowrap;
     margin-right: 20px;
     float: left;
-    width: 50px;
+    width: 100px;
 
 }
