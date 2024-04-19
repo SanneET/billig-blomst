@@ -651,3 +651,12 @@ padding: 0 15px;
         margin-bottom: 30px;
     }
 }
+
+#blomsterlogo {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    float: left;
+    width: 50px;
+
+}
