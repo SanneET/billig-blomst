@@ -23,6 +23,7 @@ body{
 
 h2.titleheadbillig{
     padding: 1%;
+    font-size: 1rem;
 }
 .titletext {
     color: #E1FF8C;
@@ -69,14 +70,13 @@ img.midulimg{
     justify-content: flex-end;
 }
 img.midulimgmobile{
-    display: none;
-    
+    display: none;  
 }
-
 
 p.bottomp{
     color: #29573B;
     word-wrap: break-word;
+    font-size: 1rem;
 }
 .bottomsection{
     background-color: #8EB68B;

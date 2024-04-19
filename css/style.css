@@ -20,6 +20,11 @@ nav{
     padding-bottom: 1%;
 }
 
+a.logoimg {
+    display: flex;
+    justify-content: space-around;
+}
+
 section.logo {
     display: flex;
     flex-direction: row;
@@ -37,11 +42,10 @@ section.logo {
     width: 5%;
     display: flex;
     justify-content: center;
-    
 }
-a.logoimg {
-    display: flex;
-    justify-content: space-around;
+
+.sidebar .color a{
+    color: white;
 }
 
 section.icon img {
@@ -107,9 +111,6 @@ ul.li.a.active,a:hover{
 .sidebar a{
     width: 100%;
 }
-.sidebar .color a{
-    color: white;
-}
 
 li.centertext{
     display: flex;
@@ -173,7 +174,7 @@ picture {
 /* Styling af tekst på forside */
 .forsideTekst{
     background-color: #8EB68B;
-    padding: 3rem;
+    padding: 2rem;
     max-width: 100%;
     width: 100%;
     
@@ -234,8 +235,9 @@ picture {
 
 .forsideAnbefalet h2{
     color: #29573B;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align:left ;
+    padding: 5vw;
 
 }
 .anbefaletTekst{
