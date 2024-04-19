@@ -75,10 +75,6 @@ ul.li.a.active,a:hover{
     transition: .5s;
 }
 
-
-
-
-
 /* Styling sidebar */
 .sidebar{
     position: absolute;
@@ -111,13 +107,11 @@ ul.li.a.active,a:hover{
 li.centertext{
     display: flex;
     justify-content: center;
-
 }
 
 a#burgericon {
     display: none;
 }
-
 
 li.sub{
     margin-top: 10%;
@@ -131,7 +125,6 @@ li.sub{
     align-items: center;
     padding: 0%;
 }
-
 
 nav .sidebar li ul .rådgivningSub{
     display: flex;
@@ -154,8 +147,6 @@ a.active.centertext.spacetext {
     margin-top: 5%;
     font-size: large;
 }
-
-
 /* Forside */
 
 /* Styling af billede */
@@ -203,7 +194,63 @@ picture {
    color: #29573B;
 }
 
-/* Om Os */
+/* Styling af Anbefalet container med bokse */
+.forsideAnbefalet{
+    margin: 2px 3px;
+    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
+    color: #29573B;
+    font-size: 1rem;
+}
+
+.anbefaletContainer {
+    overflow: auto;
+    display: flex;
+    margin:20px;
+}
+
+.anbefaletBox{
+    background-color: #29573B;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    width: 100%;
+}
+
+.anbefaletBillede{
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.forsideAnbefalet h2{
+    color: #29573B;
+    font-size: 1.5rem;
+    text-align:left ;
+
+}
+.anbefaletTekst{
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+}
+.anbefaletKnap{
+    display: inline-block;
+    background-color: #29573B;
+    color:#E1FF8C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #E1FF8C;
+}
+
+.anbefaletKnap:hover{
+    background-color:#8EB68B;
+}
+
 
 /* Plantevejledning */
 
@@ -261,12 +308,12 @@ picture {
     padding: 2vw;
     color:#29573B;
 }
+
 .containerVejledning {
     display: flex;
-    flex-direction:;
     flex-wrap: wrap;
     background-color: #8eb68b;
-    padding: 2vw;
+    padding: 10px;
 }
 
 .galleri {
@@ -288,7 +335,7 @@ picture {
 }
 
 .galleriTekst {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     color: #8EB68B;
 }
@@ -301,6 +348,7 @@ picture {
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
     color: #29573B;
     font-size: 2rem;
+    padding: 10px;
 }
 
 .plantevejledningTekstSlutTekst {
@@ -319,7 +367,6 @@ picture {
 }
 
 /* Jordbær */
-
 .container {
     width: 500vw; /* Sætter bredden af containeren til visningsvinduets bredde */
     height: 50%;
@@ -348,7 +395,6 @@ picture {
     }
     .img.midulimg{
         display: none;
-        
     }
     img.midulimgmobile{
         display: flex;
@@ -359,7 +405,9 @@ picture {
     }
     .img.midulimg{
         display: none;
-        
+    }
+    .anbefaletContainer{
+        height: 50%;
     }
 }   
 
@@ -458,6 +506,7 @@ h2.midtTekst{
 
 /* Mobile */
 @media screen and (max-width: 320px){
+
     .containerVejledning{
         width: 100%;
     }
@@ -549,61 +598,6 @@ h2.midtTekst{
 
 
 
-/* Styling af Anbefalet container med bokse */
-.forsideAnbefalet{
-    margin: 2px 3px;
-    font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
-    color: #29573B;
-    font-size: 1rem;
-}
-
-.anbefaletContainer {
-    overflow: auto;
-    display: flex;
-    margin:20px;
-}
-
-.anbefaletBox{
-    background-color: #29573B;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-right: 2rem;
-    width: 100%;
-}
-
-.anbefaletBillede{
-    flex: 1;
-    overflow: hidden;
-    width: 100%;
-}
-
-.forsideAnbefalet h2{
-    color: #29573B;
-    font-size: 1.5rem;
-    text-align:left ;
-
-}
-.anbefaletTekst{
-    color: white;
-    padding: 20px;
-}
-.anbefaletKnap{
-    display: inline-block;
-    background-color: #29573B;
-    color:#E1FF8C;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    border: 2px solid #E1FF8C;
-}
-
-.anbefaletKnap:hover{
-    background-color:#8EB68B;
-}
 
 /* Style af footer */
 
@@ -657,9 +651,6 @@ footer.footer {
     text-decoration: none;
 
 } 
-.footer-col ul li:not(:last-child){
-    /* margin-bottom: 10px; */
-}
 
 .footer-col ul li a {
     font-size: 16px;
