@@ -7,10 +7,106 @@
     <meta name="description" content="Her kan du finde alt indenfor planter, have og bolig til billig pris og god kvalitet">
     <meta name="author" content="Billigblomst">
     <title>Om os</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/omos.css">
+    
 </head>
 <body>
     <header>
+
+        <section class="logo">
+
+          <a id="burger" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
+
+          <img src="img/logo/logo-teskt.webp" alt="logo">
+            
+          <section class="icon">
+            <img class="navIcon" src="img/logo/indkob.png" alt="taske-icon">
+            <img class="navIcon"src="img/logo/lokation.png" alt="Lokations-icon">
+          </section>
+
+        </section>
+
+        <nav>
+            
+            <!-- lodret navbar -->
+
+            <ul class="sidebar">
+                <li ><a onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path id="burgericon" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a class="active centertext spacetext" href="#">RÅDGIVNING</a>
+                    <ul class="rådgivningSub">
+                        <li class="sub">ÅRSTIDER</li>
+                        <li class="sub">PLANTEVEJLEDNING</li>
+                    </ul>
+                </li>
+
+                <li><a class="active centertext spacetext" href="#">HAVE</a>
+                    <ul class="haveSub">
+                        <li class="sub">HAVEPLANTER</li>
+                        <li class="sub">SOMMER
+                             OG DRIVHUSPLANTER</li>
+                        <li class="sub">ROSER</li>
+                        <li class="sub">HÆKPLANTER</li>
+                        <li class="sub">KRUKKER</li>
+                    </ul>
+                </li>
+                
+                <li><a class="active centertext spacetext" href="#">BOLIG</a>
+                    <ul class="boligSub">
+                        <li class="sub">STUEPLANTER</li>
+                        <li class="sub">BLOMSTER OG BUKETTER</li>
+                        <li class="sub">DEKORATIONER</li>
+                        <li class="sub">BINDEARTIKLER</li>
+                        <li class="sub">GLAS</li>
+                    </ul>
+                </li>
+
+                <li><a class="active centertext spacetext" href="#">OM OS</a></li>
+                <li><a class="active centertext spacetext" href="#">GAVEKORT</a></li>
+                <li><a class="active centertext spacetext" href="#">JOB I BILLIGBLOMST</a></li>
+            </ul>
+            
+            <!-- vandret navbar -->
+            <ul class="vandretnav">
+                <li><a class="active hideOnMobile" href="#">RÅDGIVNING</a></li>
+                <li><a class="active hideOnMobile" href="#">HAVE</a></li>
+                <li><a class="active hideOnMobile" href="#">BOLIG</a></li>
+                <li><a class="active hideOnMobile" href="om-billigblomst.html">OM OS</a></li>
+                <li><a class="active hideOnMobile" href="#">GAVEKORT</a></li>
+                <li><a class="active hideOnMobile" href="#">JOB I BILLIGBLOMST</a></li>
+            </ul>
+            
+        </nav>
+        <script>
+            /*this is a javascript comment */
+            /*Creating  the hideSidebar functionality*/
+            //Creating a javascript funtion named hideSidebar
+        
+            function hideSidebar() {
+                // Creating a variable named, that fetch the sidebar attribute from the HTML document
+        
+                const sidebar = document.querySelector(".sidebar");
+                //Styling the sidebar from javascript and setting the display property to 'none'
+                sidebar.style.display = 'none';
+            }
+        
+            /*Creating  the showSidebar functionality*/
+            //Creating a javascript funtion named showSidebar
+        
+            function showSidebar() {
+        
+                // Creating a variable named, that fetch the sidebar attribute from the HTML document
+                const sidebar = document.querySelector('.sidebar');
+        
+                //Styling the sidebar from javascript and setting the display property to 'flex'
+                sidebar.style.display = 'flex';
+        
+        
+        
+            }
+        </script>
+    </header>
 
     
 
@@ -27,8 +123,11 @@
                 <p class="midptitle">Billigblomst – ’Her får du god behandling 
                 – Her er nemlig selvbetjening.</p>
             </ul>
+
+            <aside class="imgmobile">
             <img class="midulimgmobile" src="img/figur-ombilligblomst.webp" alt="figur fortæller om billigblomst metode til at vaere billigst">
-            </ul>
+            </aside>
+
            <ul class="midul">
                 <p class="midp">Det betyder ikke, at man ikke må kontakte personalet, men man skal ikke forvente en længere snak, et råd eller faglig vejledning, da flowet af varer i Billigblomst er ekstremt effektivt og dermed kræver, at vores medarbejdere er lige så effektive til at få varerne ind i butikken.
                 </p>   
@@ -39,43 +138,101 @@
 
         <!-- laver er ny sektion -->
         <section class="bottomsection">
-            <ul> 
-                <!-- Første p -->
-                <p class="bottomp"> 
-                    Vi har fart på i Billigblomst, men i alle dele af forretningen forsøger vi at arbejde ud fra vores 3 grundlæggende værdier.
-                </p> 
+            <aside class="">
+                <ul> 
+                    <!-- Første p -->
+                    <p class="bottomp"> 
+                        Vi har fart på i Billigblomst, men i alle dele af forretningen forsøger vi at arbejde ud fra vores 3 grundlæggende værdier.
+                    </p> 
         
-                <!-- Andet p -->
-                <p class="bottomp"> 
-                    <!-- Bruger span til at style/markere en del af teksten-->
-                    <span style="color: #E1FF8C;">Ordentlighed:</span> Hos Billigblomst vægter vi ordentlighed højt i alle aspekter af arbejdet og på alle niveauer i forretningen. Internt skal vi agere ordentligt overfor vores kollegaer i såvel plantecentre som administration. Det vil sige, at vi værdsætter og respekterer forskelligheder, samt at vi kommunikerer både direkte og tydeligt og altid i en god tone. Eksternt skal vi agere ordentligt overfor såvel kunder som samarbejdspartnere. Selvom vi har høflig selvbetjening i alle vores plantecentre, vil vi naturligvis gerne – med et smil – være vejvisere og svare på kundernes spørgsmål i det omfang, vi kan. Overfor vores samarbejdspartnere kommunikerer vi rettidigt og med fuld gennemsigtighed – og vi stiller generelt også krav om ordentlighed hos vores samarbejdspartnere. 
-                </p> 
+                    <!-- Andet p -->
+                    <p class="bottomp"> 
+                        <!-- Bruger span til at style/markere en del af teksten-->
+                        <span style="color: #E1FF8C;">Ordentlighed:</span> Hos Billigblomst vægter vi ordentlighed højt i alle aspekter af arbejdet og på alle niveauer i forretningen. Internt skal vi agere ordentligt overfor vores kollegaer i såvel plantecentre som administration. Det vil sige, at vi værdsætter og respekterer forskelligheder, samt at vi kommunikerer både direkte og tydeligt og altid i en god tone. Eksternt skal vi agere ordentligt overfor såvel kunder som samarbejdspartnere. Selvom vi har høflig selvbetjening i alle vores plantecentre, vil vi naturligvis gerne – med et smil – være vejvisere og svare på kundernes spørgsmål i det omfang, vi kan. Overfor vores samarbejdspartnere kommunikerer vi rettidigt og med fuld gennemsigtighed – og vi stiller generelt også krav om ordentlighed hos vores samarbejdspartnere. 
+                    </p> 
         
-                <!-- Tredje p -->
-                <p class="bottomp"> 
-                    <!-- Bruger span til at style/markere en del af teksten-->
-                    <span style="color: #E1FF8C;">Fleksibilitet:</span> Vi skal være fleksible og omstillingsparate i alle dele af forretningen. Vi skal være fleksible i forhold til vores kunder og konstant tilpasse forretningen til kundernes efterspørgsel. Vi skal være omstillingsparate og villige til at tage kontrollerede chancer for at udvikle forretningen. Vi skal være fleksible i forhold til vores interne roller, og vi værdsætter en flad organisation, hvor ingen er ”for fine” til nogle opgaver. Derfor kan du opleve vores ejer fylde varer på planteborde en lørdag morgen i plantecentret i Århus, vores administrerende direktør ændre på opstillingerne af varer i plantecentret i Hillerød eller vores økonomidirektør skubbe indkøbsvogne på en åbningsdag for ét af de nye plantecentre. 
-                </p> 
+                    <!-- Tredje p -->
+                    <p class="bottomp"> 
+                        <!-- Bruger span til at style/markere en del af teksten-->
+                        <span style="color: #E1FF8C;">Fleksibilitet:</span> Vi skal være fleksible og omstillingsparate i alle dele af forretningen. Vi skal være fleksible i forhold til vores kunder og konstant tilpasse forretningen til kundernes efterspørgsel. Vi skal være omstillingsparate og villige til at tage kontrollerede chancer for at udvikle forretningen. Vi skal være fleksible i forhold til vores interne roller, og vi værdsætter en flad organisation, hvor ingen er ”for fine” til nogle opgaver. Derfor kan du opleve vores ejer fylde varer på planteborde en lørdag morgen i plantecentret i Århus, vores administrerende direktør ændre på opstillingerne af varer i plantecentret i Hillerød eller vores økonomidirektør skubbe indkøbsvogne på en åbningsdag for ét af de nye plantecentre. 
+                    </p> 
         
-                <!-- Fjerde p -->
-                <p class="bottomp"> 
-                    <!-- Bruger span til at style/markere en del af teksten-->
-                    <span style="color: #E1FF8C;">Købmandsskab:</span> Vi skal være dygtige købmænd! Vi skal sørge for at have de rette varer til den rette pris og på det rette tidspunkt. Dette stiller store krav til alle medarbejdere involveret i køb og salg af varer – både i administrationen og i plantecentrene – i forhold til indblik i markedet, indblik i sæsonerne og indblik i kundernes behov. Vi skal opsøge alle muligheder for den gode handel, som kommer både kunderne og forretningen til gode. 
-                </p> 
-            </ul> 
+                    <!-- Fjerde p -->
+                    <p class="bottomp"> 
+                        <!-- Bruger span til at style/markere en del af teksten-->
+                        <span style="color: #E1FF8C;">Købmandsskab:</span> Vi skal være dygtige købmænd! Vi skal sørge for at have de rette varer til den rette pris og på det rette tidspunkt. Dette stiller store krav til alle medarbejdere involveret i køb og salg af varer – både i administrationen og i plantecentrene – i forhold til indblik i markedet, indblik i sæsonerne og indblik i kundernes behov. Vi skal opsøge alle muligheder for den gode handel, som kommer både kunderne og forretningen til gode. 
+                    </p> 
+                </ul> 
         
-            <!-- et nyt afsnit/p med ID "ledelse" -->
-            <p id="ledelse"> 
-                <!-- bruger igen span og style til at få fed skrift -->
-                <span style="font-weight: bold;">Ledelse</span>
-            </p>
+                <!-- et nyt afsnit/p med ID "ledelse" -->
+                <p id="ledelse"> 
+                    <!-- bruger igen span og style til at få fed skrift -->
+                    <span style="font-weight: bold;">Ledelse</span>
+                </p>
         
-            <!-- giver billedet et klasse -->
-            <img class="ledelseimg" src="img/billigblomst-crew.webp" alt=" behandling af ledelsen"> <!-- Billedeelement -->
+                <!-- giver billedet et klasse -->
+                <img class="ledelseimg" src="img/billigblomst-crew.webp" alt=" behandling af ledelsen"> <!-- Billedeelement -->
+            </aside>
         
         </section> 
 
     </main>
+
+    <!-- Opsætning af vores footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <img id="blomsterlogo" src="img/logo/logo-transparant.webp" alt="logo">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>BILLIG BLOMST</h4>
+                    <ul>
+                        <li><a href="#">Om os</a></li>
+                        <li><a href="#">Find center</a></li>
+                        <li><a href="#">Ledige jobs</a></li>
+                        <li><a href="#">Sponsor</a></li>
+                        <li><a href="#">Gavekort</a></li>
+                        <li><a href="#">Kontrolrapport</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>HAVE</h4>
+                    <ul>
+                        <li><a href="#">Haveplanter</a></li>
+                        <li><a href="#">Sommer-og drivhusplanter</a></li>
+                        <li><a href="#">Krukker</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>BOLIG</h4>
+                    <ul>
+                        <li><a href="#">Stueplanter</a></li>
+                        <li><a href="#">Blomster</a></li>
+                        <li><a href="#">Dekorationer</a></li>
+                        <li><a href="#">Bindeartikler</a></li>
+                        <li><a href="#">Glas</a></li>
+                        <li><a href="#">Julepynt</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>KUNDESERVICE</h4>
+                    <ul>
+                        <li><a href="#">Kontakt kundeservice</a></li>
+                        <li><a href="#">Retunering, reklamation og grogaranti</a></li>
+                        <li><a href="#">Ofte stillede spørgsmål - FAQ</a></li>
+                        <li><a href="#">Persondatapolitik</a></li>
+                        <li><a href="#">Handelsbetingelser</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </footer>
    
     
 </body>

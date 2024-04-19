@@ -17,6 +17,7 @@ body{
 .titlehead{
     background-color: #29573B;
     padding-top: 1vw;
+    padding: 5%;
 
 }
 
@@ -28,6 +29,7 @@ h2.titleheadbillig{
     font-size: 1rem;
     display: flex;
     justify-content: center;
+    padding-top: 2%;
 }
 
 h2#titleheadbillig{
@@ -41,6 +43,7 @@ h2#titleheadbillig{
 ul.midptitlesection {
     display: flex;
     flex-direction: row;
+    padding: 5%;
 }
 .midp{
     color: #29573B;
@@ -128,6 +131,16 @@ img.ledelseimg{
     .h1.titletext {
         font-size: 0.3rem;
     }
+    .imgmobile{
+        display: flex;
+        justify-content: center;
+    }
+    p.midp{
+        padding: 5%;
+    }
+    
+
+
 }   
 /* Tablet */
 
@@ -158,13 +171,17 @@ img.ledelseimg{
         font-size: 1 rem;
     }
     p.midp{
-        font-size: o.6rem;
+        font-size: 0.3rem;
     }
     .h1.titletext {
         font-size: 1rem;
     }
     h2#titleheadbillig {
         font-size: 0.6rem;
+    }
+    p.midptitle{
+        font-size: 1rem;
+        font-family: playfair display, serif;
     }
 
     
@@ -195,6 +212,10 @@ img.ledelseimg{
         justify-content: center;
 
     }
+    p.midp {
+        font-size: 0.8rem;
+    }
+    
 
 }
 
