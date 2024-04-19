@@ -438,7 +438,9 @@ h2.midtTekst{
 
 /* Mobile */
 @media screen and (max-width: 320px){
-
+    .hideOnMobile{
+        display: none;
+    }
 
 }
 
