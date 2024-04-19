@@ -60,6 +60,7 @@ p.midptitle{
     flex-direction: row;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding: 5%;
 }
 img.midulimg{
     width: 70%;
@@ -135,10 +136,10 @@ img.ledelseimg{
         display: flex;
         justify-content: center;
     }
-    p.midp{
+    
+    .bottomtext{
         padding: 5%;
     }
-    
 
 
 }   
@@ -159,9 +160,9 @@ img.ledelseimg{
     }
 
     img.midulimg{
-        width: 50%;
-        height: 50%;
-        display: flex;
+        width: 100%;
+        height: 100%;
+        display: block;
         justify-content: flex-end;
     }
     .ledelseimg {
@@ -184,6 +185,16 @@ img.ledelseimg{
         font-family: playfair display, serif;
     }
 
+    p.midp{
+        padding: 5%;
+    }
+    .bottomtext{
+        padding: 5%;
+    }
+    .midul{
+        padding-left: 0%;
+    }
+    
     
 
 }      

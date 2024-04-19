@@ -470,6 +470,9 @@ h2.midtTekst{
     .forsideTekst h1{
         font-size: 1rem;
     }
+    .sidebar{
+        width: 100%;
+    }
 
 }
 
@@ -490,6 +493,10 @@ h2.midtTekst{
     }
     .plantevejledningIntro h1{
         font-size: 10px;
+    }
+    .sidebar{
+        height: 300vh;
+        box-shadow: 0 2px 4px 0 rgba(2, 101, 41, 0.2);
     }
 
 }      
@@ -526,6 +533,7 @@ h2.midtTekst{
      .forsideTekst h1{
         font-size: 1rem;
     }
+    
 
 }
 
