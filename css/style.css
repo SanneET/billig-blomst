@@ -80,8 +80,6 @@ ul.li.a.active,a:hover{
 
 
 /* Styling sidebar */
-
-
 .sidebar{
     position: absolute;
     top: 0;
@@ -231,7 +229,7 @@ a.active.centertext.spacetext {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 1px;
+    padding: 50px;
 }
 .sogefelt{
     text-align: center;
@@ -248,12 +246,13 @@ a.active.centertext.spacetext {
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
     text-align: center;
     font-size: 1.5rem;
+    padding: 30px;
 }
 
 .plantevejledningIntro p{
     font-size: 1rem; ;
     text-align:center;
-    padding: 5px;
+    padding: 15px;
     color: #FFFFFF;
     flex-wrap: wrap;
 }
@@ -262,39 +261,39 @@ a.active.centertext.spacetext {
     font-size: 1.5rem;
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
     background-color: #8EB68B;
-    padding: 5vw;
+    padding: 2vw;
     color:#29573B;
 }
 .containerVejledning {
-    padding: 5vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    flex-direction: column;
+    display: flex;
+    flex-direction:;
     flex-wrap: wrap;
     background-color: #8eb68b;
+    padding: 2vw;
 }
 
 .galleri {
-    border: 1px solid #ccc;
+    background-color: white;
+    width: 33%;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #FFFFFF;
-    
+    padding: 10px;
 }
 
 .galleri:hover {
-    border: 1px solid #777;
+    background-color: #29573B;
 }
 
 .galleri img {
     width: 100%;
     height: auto;
+    padding:10px ;
 }
 
 .galleriTekst {
     padding: 15px;
     text-align: center;
+    color: #8EB68B;
 }
 
 .plantevejledningTekstSlut{
@@ -311,11 +310,15 @@ a.active.centertext.spacetext {
     color: #29573B;
     font-size: 1rem;
     text-align: start;
+    padding: 10px;
 }
 
-.plantevejledningTekstSlutListe{
+.plantevejledningTekstSlutListe .redskaberListe{
     color: #29573B;
+    list-style:circle;
     font-size: 1rem;
+    list-style-position:inside;
+    padding: 10px;
 }
 
 /* Jordbær */
@@ -418,6 +421,12 @@ h2.midtTekst{
 
 /* Mobile */
 @media screen and (max-width: 320px){
+    .containerVejledning{
+        width: 100%;
+    }
+    .galleri{
+        width: 100%;
+    }
 
 
 }
@@ -430,6 +439,12 @@ h2.midtTekst{
     }
     .sidebar{
         width: 100%;
+    }
+    .containerVejledning{
+        width: 100%;
+    }
+    .galleri{
+        width: 50%;
     }
 
 }      
@@ -557,15 +572,6 @@ footer.footer {
     padding: 7%;
     background-color:#29573B;
 }
-
-/* .footer-col{
-width: 25%;
-padding: 0 15px;
-} */
-
-/* .footer-col{
-    display: flex;
-} */
 
 .footer-col {
     display: flex;
