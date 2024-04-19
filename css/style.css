@@ -159,8 +159,17 @@ a.active.centertext.spacetext {
 /* Forside */
 
 /* Styling af billede */
+
+picture {
+    display: flex;
+    justify-content: center;
+    background-color: #29573B;
+    padding: 1.5%;
+    padding-top: 0%;
+}
+
 .forsideBilled{
-    max-width: 100vw;
+    max-width: 100%;
 }
 
 /* Styling af tekst på forside */
@@ -171,6 +180,14 @@ a.active.centertext.spacetext {
     width: 100%;
     
 }
+
+/* placering af tekst på forside */
+.forsideFlex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 /* Styling af h1 */
 .forsideTekst h1{
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
@@ -182,34 +199,11 @@ a.active.centertext.spacetext {
 .forsideTekst p{
    text-align: center;
    font-size: 1rem;
-   margin-top: 30px;
+   margin-top: 5%;
    color: #29573B;
 }
 
 /* Om Os */
-.titlehead{
-    background-color: #29573B;
-    width: 100vw;
-    height: 20vw;
-    padding-top: 3vw;
-
-}
-.titletext {
-    color: #E1FF8C;
-    font-size: 2vw;
-    display: flex;
-    justify-content: center;
-}
-
-#titleheadbillig{
-    color: #FFFFFF;
-    font-size: 1.5vw;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3vw;
-    margin-top: 3vw;
-}
-
 
 /* Plantevejledning */
 
@@ -237,6 +231,9 @@ a.active.centertext.spacetext {
     padding: 1rem; 
     border: 2px solid #E1FF8C; 
     border-radius: 50px; 
+
+    font-size: 16px; 
+
     font-size: 1rem; 
     background-color: #FFFFFF;
 }
@@ -344,6 +341,28 @@ a.active.centertext.spacetext {
 }
 
 
+/* Mobile */
+@media screen and (max-width: 320px){
+    .plantevejledningIntro h1{
+        font-size: 5px;
+    }
+    .img.midulimg{
+        display: none;
+        
+    }
+    img.midulimgmobile{
+        display: flex;
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .img.midulimg{
+        display: none;
+        
+    }
+}   
+
 h1.jordh1 {
 padding: 50px;
 font-family: Helvetica, Arial, sans-serif;
@@ -372,14 +391,32 @@ p.jordp {
     font-family: Helvetica, sans-serif;
     font-family: Helvetica, arial, sans-serif;
     color: #FFFFFF;
-
+    padding: 0.5px;
 }
 
-.jordbaer-midten{
+.topText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+jordbaer-midten{
 background-color:#8EB68B ;
 display: flex;
 flex-direction: column;
 padding: 5%;
+padding-bottom: 7%;
+}
+
+/* jeg ved ikke hvorfor, men den behøvede to for ellers fuckede den op? */
+section.jordbaer-midten {
+    background-color: #8EB68B;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    padding-bottom: 7%;
 }
 
 .midtTekst {
@@ -390,7 +427,7 @@ padding-right: 2%;
 }
 
 p.midtTekst{
-    font-size: xx-large;
+    font-size: large;
     padding-bottom: 2%;
 }
 
@@ -414,8 +451,8 @@ h2.midtTekst{
 
 .jordbærH2{
     font-family: playfairdisplay, serif;
-    font-size: 40px;
-    padding-bottom: 10px;
+    font-size: 30px;
+    padding-bottom: 7px;
 }
 
 
@@ -427,7 +464,12 @@ h2.midtTekst{
     .galleri{
         width: 100%;
     }
-
+    .hideOnMobile{
+        display: none;
+    }
+    .forsideTekst h1{
+        font-size: 1rem;
+    }
 
 }
 
@@ -446,6 +488,9 @@ h2.midtTekst{
     .galleri{
         width: 50%;
     }
+    .plantevejledningIntro h1{
+        font-size: 10px;
+    }
 
 }      
 
@@ -461,6 +506,27 @@ h2.midtTekst{
     #burgericon{
         display: flex;
     }
+    img.midulimgmobile{
+        display: none;
+    }
+    .img.midulimg{
+        display: flex;
+        display: flex;
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+    .forsideTekst p{
+        
+        font-size: 0.8rem;
+        
+     }
+     .forsideTekst h1{
+        font-size: 1rem;
+    }
+
 }
 
 /* Desktop */
@@ -469,7 +535,7 @@ h2.midtTekst{
         font-size: 2rem;
     }
     .forsideTekst p{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     
     a#burgericon {
@@ -480,8 +546,6 @@ h2.midtTekst{
     }
 }
 
-
-/* navbar */
 
 
 
@@ -619,4 +683,14 @@ footer.footer {
         width: 50%;
         margin-bottom: 30px;
     }
+}
+
+#blomsterlogo {
+    margin-left: -50%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    float: left;
+    width: 100px;
+
 }
