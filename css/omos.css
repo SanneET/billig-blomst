@@ -49,11 +49,11 @@ h2#titleheadbillig{
 }
 .midp{
     color: #29573B;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     
 }
 p.midptitle{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: #29573B;
 
 }
@@ -94,7 +94,7 @@ p.bottomp{
     margin-top: 10%;
     margin-bottom: 5%;
     color: #29573B;
-    font-style: bold;
+    font-weight: bold;
 }
 img.ledelseimg{
     width: 100%;
@@ -109,7 +109,7 @@ img.ledelseimg{
     .plantevejledningIntro h1{
         font-size: 5px;
     }
-    .img.midulimg{
+    img.midulimg{
         display: none;
         
     }
@@ -120,15 +120,11 @@ img.ledelseimg{
         display: flex;
         justify-content: center;
     }
-    img.midulimg{
-        display: none
-        
-    }
 
     
     p.bottomp {
     color: #29573B;
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     max-width: 100%;
     padding-bottom: 5%;
     }
@@ -146,6 +142,7 @@ img.ledelseimg{
     .bottomtext{
         padding: 5%;
     }
+}
   
 /* Tablet */
 
@@ -160,7 +157,10 @@ img.ledelseimg{
         font-size: 10px;
     }
     p.midp {
-        font-size: 1rem;
+        font-size: 2rem;
+    }
+    as.mid p{
+        font-size: 3rem;
     }
 
     img.midulimg{
@@ -173,11 +173,11 @@ img.ledelseimg{
         max-width: 100%;
     }
     p.bottomp{
-        font-size: 1 rem;
+        
         margin-bottom: 2%;
     }
     p.midp{
-        font-size: 0.3rem;
+        font-size: 0.8rem;
     }
     .h1.titletext {
         font-size: 1rem;
@@ -193,8 +193,9 @@ img.ledelseimg{
     p.midp{
         padding: 5%;
     }
-    .bottomtext{
+    p .bottomtext{
         padding: 5%;
+        font-size: 3rem;
     }
     .midul{
         padding-left: 0%;
@@ -207,7 +208,7 @@ img.ledelseimg{
 
 }      
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 1000px) and (min-width: 376px) {
     .anbefaletContainer{
         overflow-x: scroll; 
         white-space: nowrap; 
