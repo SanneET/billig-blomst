@@ -121,13 +121,14 @@ img.ledelseimg{
         
     }
     
-    p.bottomp{
+    p.bottomp {
     color: #29573B;
     font-size: 0.6rem;
     max-width: 100%;
+    padding-bottom: 5%;
     }
     .midp{
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .h1.titletext {
         font-size: 0.3rem;
