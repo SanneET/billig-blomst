@@ -41,10 +41,11 @@ h2#titleheadbillig{
     margin-bottom: 1vw;
     margin-top: 1vw;
 }
-ul.midptitlesection {
+.midptitlesection {
     display: flex;
     flex-direction: row;
-    padding: 5%;
+    padding: 15px;
+
 }
 .midp{
     color: #29573B;
@@ -69,6 +70,7 @@ img.midulimg{
     display: none;
     justify-content: flex-end;
 }
+
 img.midulimgmobile{
     display: none;  
 }
@@ -97,8 +99,6 @@ img.ledelseimg{
 .bottomsection ul p{
     margin-bottom: 5%;
 }
-
-
 
 /* Mobile */
 @media screen and (max-width: 320px){
@@ -141,9 +141,7 @@ img.ledelseimg{
     .bottomtext{
         padding: 5%;
     }
-
-
-}   
+  
 /* Tablet */
 
 @media screen and (max-width: 1000px) and (min-width: 321px) {
