@@ -208,7 +208,7 @@ img.ledelseimg{
 
 }      
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 1000px) and (min-width: 376px) {
     .anbefaletContainer{
         overflow-x: scroll; 
         white-space: nowrap; 
