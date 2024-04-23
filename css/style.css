@@ -193,13 +193,13 @@ picture {
 /* Styling af h1 */
 .forsideTekst h1{
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
-    text-align: center;
+    text-align:left;
     color: #E1FF8C;
     font-size: 2rem;
 }
 /* Styling af p */
 .forsideTekst p{
-   text-align: center;
+   text-align: left;
    font-size: 1rem;
    margin-top: 5%;
    color: #29573B;
@@ -272,7 +272,7 @@ picture {
 }
 
 .plantevejledningIntro .plantevejledningIntroH1{
-    text-align: center;
+    text-align: left;
     color: #E1FF8C;
     font-size: 2rem;
 }
@@ -299,14 +299,14 @@ picture {
 .plantevejledningIntro h2{
     color: white;
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     padding: 15px;
 }
 
 .plantevejledningIntro p{
     font-size: 1rem; ;
-    text-align: center;
+    text-align: left;
     padding: 15px;
     color: #FFFFFF;
     flex-wrap: wrap;
@@ -408,9 +408,8 @@ color: #E1FF8C;
 }
 
 h2.jordh2 {
-    padding: 25px;
     font-family:playfair display;
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,7 +424,7 @@ p.jordp {
     font-family: Helvetica, sans-serif;
     font-family: Helvetica, arial, sans-serif;
     color: #FFFFFF;
-    padding: 0.5px;
+    padding-top: 10px;
 }
 
 .topText{
@@ -588,9 +587,6 @@ footer.footer {
     }
     .img.midulimg{
         display: none;
-    }
-    .anbefaletContainer{
-        height: 50%;
     }
     .containerVejledning{
         width: 100%;
