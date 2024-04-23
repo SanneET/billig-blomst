@@ -88,7 +88,7 @@ ul.li.a.active,a:hover{
     position: absolute;
     top: 0;
     left: 0;
-    height: 265vh;
+    height: 400vh;
     width: 250px;
     z-index: 999;
     display: none;
@@ -98,6 +98,7 @@ ul.li.a.active,a:hover{
     background-color: #8eb68b;
     margin-left: 0;
     padding-bottom: 40%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
 }
 
 .sidebar li a{
@@ -154,6 +155,8 @@ a.active.centertext.spacetext {
     display: flex;
     margin-top: 5%;
     font-size: large;
+    background-color: #8EB68B;
+    padding-bottom: #8EB68B;
 }
 /* Forside */
 
