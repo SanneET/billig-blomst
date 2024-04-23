@@ -328,7 +328,6 @@ picture {
     background-color: white;
     width: 33%;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -350,7 +349,6 @@ picture {
 
 .plantevejledningTekstSlut{
     padding: 2vw 5vw;
-
 }
 .plantevejledningTekstSlutOverskrift{
     font-family: "Playfair Display", "PT Serif", "IBM Plex Serif", serif;
@@ -395,29 +393,6 @@ picture {
  padding: 5vw;  
 }
 
-
-/* Mobile */
-@media screen and (max-width: 320px){
-    .plantevejledningIntro h1{
-        font-size: 5px;
-    }
-    .img.midulimg{
-        display: none;
-    }
-    img.midulimgmobile{
-        display: flex;
-        max-width: 70%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
-    .img.midulimg{
-        display: none;
-    }
-    .anbefaletContainer{
-        height: 50%;
-    }
-}   
 
 h1.jordh1 {
 padding: 50px;
@@ -512,123 +487,6 @@ h2.midtTekst{
     padding-bottom: 7px;
 }
 
-
-/* Mobile */
-@media screen and (max-width: 320px){
-
-    .containerVejledning{
-        width: 100%;
-    }
-    .galleri{
-        width: 100%;
-    }
-    .hideOnMobile{
-        display: none;
-    }
-    .forsideTekst h1{
-        font-size: 1rem;
-    }
-    .sidebar{
-        width: 100%;
-    }
-    .plantevejledningIntro .plantevejledningIntroH1{
-        font-size: 1rem;
-    }
-    .sogefelt{
-        width: 100%; 
-        height: 50%; 
-        font-size: 1rem;
-    }
-    .footer-col-kundeservice{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-}
-
-/* Tablet */
-
-@media screen and (max-width: 1000px) and (min-width: 321px) {
-    .hideOnMobile{
-        display: none;
-    }
-    .sidebar{
-        width: 100%;
-    }
-    .containerVejledning{
-        width: 100%;
-    }
-    .galleri{
-        width: 50%;
-    }
-    .plantevejledningIntro h1{
-        font-size: 10px;
-    }
-    .sidebar{
-        height: 300vh;
-        box-shadow: 0 2px 4px 0 rgba(2, 101, 41, 0.2);
-    }
-    .plantevejledningIntro .plantevejledningIntroH1{
-        font-size: 2rem;
-    }
-
-}      
-
-@media screen and (max-width: 768px) and (min-width: 321px) {
-    .anbefaletContainer{
-        overflow-x: scroll; 
-        white-space: nowrap; 
-    }
-    .anbefaletBox{
-        margin-right: 10px;
-
-    }
-    #burgericon{
-        display: flex;
-    }
-    img.midulimgmobile{
-        display: none;
-    }
-    .img.midulimg{
-        display: flex;
-        display: flex;
-        max-width: 70%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-
-    }
-    .forsideTekst p{
-        
-        font-size: 0.8rem;
-        
-     }
-     .forsideTekst h1{
-        font-size: 1rem;
-    }
-    
-
-}
-
-/* Desktop */
-@media screen and (min-width: 1001px) {
-    .forsideTekst h1{
-        font-size: 2rem;
-    }
-    .forsideTekst p{
-        font-size: 1rem;
-    }
-    
-    a#burgericon {
-        display: none;
-    }
-    ul.sidebar {
-        display: none;
-    }
-  
-}
-
 /* Style af footer */
 
 .container{
@@ -649,12 +507,6 @@ flex-wrap: wrap
 .footer-col ul{
     list-style: none;
 }
-
-
-/* .footer{
-    background-color:#29573B;
-    /* padding:70px 0 ; */
-/*} */
 
 footer.footer {
     padding: 7%;
@@ -713,5 +565,100 @@ footer.footer {
     margin-right: 20px;
     float: left;
     width: 100px;
-
 }
+
+ 
+/* Mobile */
+@media screen and (max-width: 320px){
+    .plantevejledningIntro h1{
+        font-size: 5px;
+    }
+    .img.midulimg{
+        display: none;
+    }
+    img.midulimgmobile{
+        display: flex;
+        max-width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .img.midulimg{
+        display: none;
+    }
+    .anbefaletContainer{
+        height: 50%;
+    }
+    .containerVejledning{
+        width: 100%;
+    }
+    .galleri{
+        width: 100%;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .forsideTekst h1{
+        font-size: 1rem;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .plantevejledningIntro .plantevejledningIntroH1{
+        font-size: 1rem;
+    }
+    .sogefelt{
+        width: 100%; 
+        height: 50%; 
+        font-size: 1rem;
+    }
+    .footer-col-kundeservice{
+        display: flex;
+        flex-direction: column;
+    }
+}   
+
+/* Desktop */
+@media screen and (min-width: 1001px) {
+    .forsideTekst h1{
+        font-size: 2rem;
+    }
+    .forsideTekst p{
+        font-size: 1rem;
+    }
+    
+    a#burgericon {
+        display: none;
+    }
+    ul.sidebar {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 1000px) and (min-width: 321px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .containerVejledning{
+        width: 100%;
+    }
+    .galleri{
+        width: 50%;
+    }
+    .plantevejledningIntro h1{
+        font-size: 10px;
+    }
+    .sidebar{
+        height: 300vh;
+        box-shadow: 0 2px 4px 0 rgba(2, 101, 41, 0.2);
+    }
+    .plantevejledningIntro .plantevejledningIntroH1{
+        font-size: 2rem;
+    }
+
+}      
