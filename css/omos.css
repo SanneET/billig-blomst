@@ -95,6 +95,7 @@ p.bottomp{
     margin-bottom: 5%;
     color: #29573B;
     font-weight: bold;
+    margin: 3%;
 }
 img.ledelseimg{
     width: 100%;
@@ -105,7 +106,7 @@ img.ledelseimg{
 }
 
 /* Mobile */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 499px){
     .plantevejledningIntro h1{
         font-size: 5px;
     }
@@ -145,7 +146,7 @@ img.ledelseimg{
   
 /* Tablet */
 
-@media screen and (max-width: 1000px) and (min-width: 376px) {
+@media screen and (max-width: 1000px) and (min-width: 500px) {
     .hideOnMobile{
         display: none;
     }
@@ -174,6 +175,7 @@ img.ledelseimg{
     p.bottomp{
         
         margin-bottom: 2%;
+        margin: 3%;
     }
     p.midp{
         font-size: 0.8rem;
@@ -207,7 +209,7 @@ img.ledelseimg{
 
 }      
 
-@media screen and (max-width: 1000px) and (min-width: 376px) {
+@media screen and (max-width: 1000px) and (min-width: 500px) {
     .anbefaletContainer{
         overflow-x: scroll; 
         white-space: nowrap; 
